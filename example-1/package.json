@@ -1,0 +1,14 @@
+{
+  "name": "example-1-hackers-quotes",
+  "version": "0.0.0",
+  "description": "",
+  "main": "hackers.coffee",
+  "scripts": {
+    "test": "jasmine-node --forceexit --coffee --color test/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
