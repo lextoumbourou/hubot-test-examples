@@ -1,9 +1,11 @@
+path = require 'path'
 Robot = require 'hubot/src/robot'
-TextMessage = require 'hubot/src/message'.TextMessage
+TextMessage = require('hubot/src/message').TextMessage
 
 describe 'Hackers hubot script', ->
   robot = null
   user = null
+  adapter = null
 
   beforeEach ->
     ready = false
@@ -25,8 +27,10 @@ describe 'Hackers hubot script', ->
     robot.shutdown()
 
   it 'lists for the word hack and responds with a phrase', (done) ->
+    spyOn(Math, 'random').andReturn(0)
+
     adapter.on 'send', (envelope, strings) ->
-      expect strings[0].toBe('Expected quote')
+      expect(strings[0]).toBe('Hack the planet!')
       done()
 
-    adapter.receive new TextMessage user, 'blah hack blah'
+    adapter.receive new TextMessage user, 'something hack something'

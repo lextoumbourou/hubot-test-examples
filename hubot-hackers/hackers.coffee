@@ -5,5 +5,5 @@ replies = [
 ]
 
 module.exports = (robot) ->
-  robot.response /hack/i, (msg) ->
+  robot.hear /hack/i, (msg) ->
     msg.send msg.random replies

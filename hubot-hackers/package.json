@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hubot": "^2.8.1",
+    "hubot-mock-adapter": "^1.0.0",
     "jasmine-node": "^1.14.5"
   }
 }
