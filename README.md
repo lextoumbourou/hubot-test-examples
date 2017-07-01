@@ -12,7 +12,7 @@ A reference repository of unit tested Hubot scripts.
 ## Tools to consider
 
 * [sinon](http://sinonjs.org/) - for mocks/stubs.
-* [mocha](http://visionmedia.github.io/mocha/) - for the test framework.
+* [mocha](http://mochajs.org/) - for the test framework.
 * [blanket.js](http://blanketjs.org/) - for code coverage.
 
 ## hubot-hackers
